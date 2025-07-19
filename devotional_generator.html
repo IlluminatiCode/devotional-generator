@@ -655,7 +655,9 @@
                 errorMessage.classList.add('hidden');
                 errorMessage.innerHTML = '';
                 loadingIndicator.classList.remove('hidden');
-                let prompt = `Generate a short devotional (200-300 words) on the theme of "${selectedTheme}".`;
+                let prompt = `Generate a short devotional (200-300 words) on the theme of "${selectedTheme}".
+
+Timestamp: ${new Date().toISOString()}`;
                 if (selectedAudience) {
                     prompt += ` It should be tailored for a "${selectedAudience}" audience.`;
                 }
