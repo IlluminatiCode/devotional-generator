@@ -15,18 +15,21 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api/generate', async (req, res) => {
+    console.log('Received request to /api/generate');
     try {
+        console.log('Attempting to get API key...');
         const apiKey = process.env.GEMINI_API_KEY;
         if (!apiKey) {
+            console.error('API key not configured on the server (inside /api/generate).');
             return res.status(500).json({ error: 'API key not configured on the server.' });
         }
-
+        console.log('API key found. Constructing API URL...');
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
+        console.log('Making request to Gemini API...');
         const response = await axios.post(apiUrl, req.body, {
             headers: { 'Content-Type': 'application/json' }
         });
-
+        console.log('Received response from Gemini API.');
         res.json(response.data);
     } catch (error) {
         console.error('Error proxying to Gemini API:', error.response ? error.response.data : error.message);
