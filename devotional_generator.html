@@ -655,27 +655,11 @@
                 errorMessage.classList.add('hidden');
                 errorMessage.innerHTML = '';
                 loadingIndicator.classList.remove('hidden');
-                let prompt = `Generate a short devotional (200-300 words) on the theme of "${selectedTheme}".
-
-Timestamp: ${new Date().toISOString()}`;
-                if (selectedAudience) {
-                    prompt += ` It should be tailored for a "${selectedAudience}" audience.`;
-                }
-                if (selectedMood) {
-                    prompt += ` The devotional should also consider a mood of "${selectedMood}".`;
-                }
-                prompt += ` It must include:
-                1. A concise title (3-6 words) for the devotional.
-                2. An introductory thought on the theme.
-                3. 1-2 *different* relevant Bible verses (with chapter and verse numbers, e.g., John 3:16). Try to vary the verses used if the same theme is selected multiple times.
-                4. A brief reflection or practical application of the theme from a biblical perspective.
-                5. An actionable and engaging "Today's Challenge".
-                6. A short concluding prayer.
-                Please format your response with clear headings for each section: "Concise Title (3-6 words):", "Introductory Thought:", "Scripture:", "Reflection:", "Prayer:", "Today's Challenge:". Do not use any Markdown formatting like bold (**), italics (*), or headings (###) within the content of each section.`;
-                try {
-                    let chatHistory = [];
-                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                    const payload = { contents: chatHistory };
+                const payload = { 
+                        selectedTheme: selectedTheme,
+                        selectedAudience: selectedAudience,
+                        selectedMood: selectedMood
+                    };
                     const apiKey = ""; // Key is now on the server
                     const apiUrl = `/api/generate`;
                     const response = await fetch(apiUrl, {
