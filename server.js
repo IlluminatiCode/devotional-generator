@@ -6,7 +6,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(express.static('.')); // Serve the HTML file
+app.use(express.static('.')); // Serve static files
+
+// Add a route for the root path to serve the HTML file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'devotional_generator.html'));
+});
 
 app.post('/api/generate', async (req, res) => {
     try {
