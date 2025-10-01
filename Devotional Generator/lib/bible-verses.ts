@@ -1,4 +1,4 @@
-import { Theme } from "./types";
+import type { Theme } from "./types";
 
 // Curated list of Bible verses by theme
 export const bibleVersesByTheme: Record<Theme, string[]> = {

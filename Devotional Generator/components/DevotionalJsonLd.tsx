@@ -1,6 +1,7 @@
 'use client';
 
-import { generateArticleSchema, DevotionalArticle } from '@/lib/seo/schema';
+import type { DevotionalArticle } from '@/lib/seo/schema';
+import { generateArticleSchema } from '@/lib/seo/schema';
 
 interface DevotionalJsonLdProps {
   devotional: DevotionalArticle;

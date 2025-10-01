@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 const siteUrl = process.env['NEXT_PUBLIC_SITE_URL'] || 'https://devotional-generator.vercel.app';
 

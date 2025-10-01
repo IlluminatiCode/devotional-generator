@@ -1,9 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 import axios from "axios";
 import { devotionalRequestSchema } from "@/lib/validation";
 import { getRandomVerses } from "@/lib/bible-verses";
-import { GeminiAPIResponse } from "@/lib/types";
-import { ZodError } from "zod";
+import type { GeminiAPIResponse } from "@/lib/types";
+import type { ZodError } from "zod";
 
 /**
  * POST /api/generate
