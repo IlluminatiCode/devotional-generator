@@ -30,7 +30,7 @@ export default function MoodSelector({
           <SelectionCard
             key={option.value}
             value={option.value}
-            emoji={option.emoji}
+            icon={option.icon}
             label={option.label}
             isSelected={selectedMood === option.value}
             onClick={onMoodSelect}

@@ -30,7 +30,7 @@ export default function ThemeSelector({
           <SelectionCard
             key={option.value}
             value={option.value}
-            emoji={option.emoji}
+            icon={option.icon}
             label={option.label}
             isSelected={selectedTheme === option.value}
             onClick={onThemeSelect}

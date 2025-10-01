@@ -90,48 +90,75 @@ export const DEVOTIONAL_CONFIG = {
 
 /**
  * UI Card Options for Theme Selection
+ * Using Lucide icon names for professional appearance
  */
 export const THEME_OPTIONS = [
-  { value: 'Patience', emoji: '⏳', label: 'Patience' },
-  { value: 'Forgiveness', emoji: '🕊️', label: 'Forgiveness' },
-  { value: 'Leadership', emoji: '👑', label: 'Leadership' },
-  { value: 'Hope', emoji: '🌟', label: 'Hope' },
-  { value: 'Love', emoji: '❤️', label: 'Love' },
-  { value: 'Faith', emoji: '🙏', label: 'Faith' },
-  { value: 'Gratitude', emoji: '🙌', label: 'Gratitude' },
-  { value: 'Courage', emoji: '🦁', label: 'Courage' },
-  { value: 'Wisdom', emoji: '🦉', label: 'Wisdom' },
-  { value: 'Joy', emoji: '😊', label: 'Joy' },
-  { value: 'Kindness', emoji: '🤗', label: 'Kindness' },
-  { value: 'Humility', emoji: '🙇', label: 'Humility' },
+  { value: 'Patience', icon: 'Clock', label: 'Patience' },
+  { value: 'Forgiveness', icon: 'Heart', label: 'Forgiveness' },
+  { value: 'Leadership', icon: 'Crown', label: 'Leadership' },
+  { value: 'Hope', icon: 'Sparkles', label: 'Hope' },
+  { value: 'Love', icon: 'HeartHandshake', label: 'Love' },
+  { value: 'Faith', icon: 'Church', label: 'Faith' },
+  { value: 'Gratitude', icon: 'Smile', label: 'Gratitude' },
+  { value: 'Courage', icon: 'Shield', label: 'Courage' },
+  { value: 'Wisdom', icon: 'BookOpen', label: 'Wisdom' },
+  { value: 'Joy', icon: 'PartyPopper', label: 'Joy' },
+  { value: 'Kindness', icon: 'HandHeart', label: 'Kindness' },
+  { value: 'Humility', icon: 'UserCheck', label: 'Humility' },
+  { value: 'Peace', icon: 'Waves', label: 'Peace' },
+  { value: 'Trust', icon: 'Handshake', label: 'Trust' },
+  { value: 'Perseverance', icon: 'Mountain', label: 'Perseverance' },
+  { value: 'Compassion', icon: 'HeartPulse', label: 'Compassion' },
+  { value: 'Faithfulness', icon: 'Star', label: 'Faithfulness' },
+  { value: 'Grace', icon: 'Gift', label: 'Grace' },
+  { value: 'Mercy', icon: 'Droplets', label: 'Mercy' },
+  { value: 'Obedience', icon: 'CheckCircle', label: 'Obedience' },
+  { value: 'Worship', icon: 'Music', label: 'Worship' },
+  { value: 'Service', icon: 'HandHelping', label: 'Service' },
+  { value: 'Sacrifice', icon: 'Flame', label: 'Sacrifice' },
+  { value: 'Purpose', icon: 'Target', label: 'Purpose' },
 ] as const;
 
 /**
  * UI Card Options for Audience Selection
+ * Using Lucide icon names for professional appearance
  */
 export const AUDIENCE_OPTIONS = [
-  { value: '', emoji: '👥', label: 'None' },
-  { value: 'Youth', emoji: '🧑‍🎓', label: 'Youth' },
-  { value: 'Parents', emoji: '👨‍👩‍👧‍👦', label: 'Parents' },
-  { value: 'Leaders', emoji: '👔', label: 'Leaders' },
-  { value: 'Students', emoji: '📚', label: 'Students' },
-  { value: 'Couples', emoji: '💑', label: 'Couples' },
-  { value: 'Singles', emoji: '👤', label: 'Singles' },
-  { value: 'Employee', emoji: '💼', label: 'Employee' },
-  { value: 'Grandparent', emoji: '👵', label: 'Grandparent' },
+  { value: '', icon: 'Users', label: 'General' },
+  { value: 'Youth', icon: 'GraduationCap', label: 'Youth' },
+  { value: 'Parents', icon: 'Home', label: 'Parents' },
+  { value: 'Leaders', icon: 'Briefcase', label: 'Leaders' },
+  { value: 'Students', icon: 'BookMarked', label: 'Students' },
+  { value: 'Couples', icon: 'HeartHandshake', label: 'Couples' },
+  { value: 'Singles', icon: 'User', label: 'Singles' },
+  { value: 'Professionals', icon: 'Building2', label: 'Professionals' },
+  { value: 'Seniors', icon: 'Armchair', label: 'Seniors' },
+  { value: 'Children', icon: 'Baby', label: 'Children' },
+  { value: 'Teenagers', icon: 'Smartphone', label: 'Teenagers' },
+  { value: 'Ministers', icon: 'Church', label: 'Ministers' },
+  { value: 'New Believers', icon: 'Sprout', label: 'New Believers' },
+  { value: 'Seekers', icon: 'Search', label: 'Seekers' },
+  { value: 'Caregivers', icon: 'HeartPulse', label: 'Caregivers' },
 ] as const;
 
 /**
  * UI Card Options for Mood Selection
+ * Using Lucide icon names for professional appearance
  */
 export const MOOD_OPTIONS = [
-  { value: '', emoji: '😐', label: 'None' },
-  { value: 'Anxious', emoji: '😟', label: 'Anxious' },
-  { value: 'Grateful', emoji: '😊', label: 'Grateful' },
-  { value: 'Lost', emoji: '😕', label: 'Lost' },
-  { value: 'Confused', emoji: '🤔', label: 'Confused' },
-  { value: 'Doubting', emoji: '🤨', label: 'Doubting' },
-  { value: 'Joyful', emoji: '😄', label: 'Joyful' },
-  { value: 'Stressed', emoji: '😩', label: 'Stressed' },
-  { value: 'Peaceful', emoji: '😌', label: 'Peaceful' },
+  { value: '', icon: 'Minus', label: 'Neutral' },
+  { value: 'Anxious', icon: 'CloudLightning', label: 'Anxious' },
+  { value: 'Grateful', icon: 'Smile', label: 'Grateful' },
+  { value: 'Lost', icon: 'HelpCircle', label: 'Lost' },
+  { value: 'Confused', icon: 'BrainCircuit', label: 'Confused' },
+  { value: 'Doubting', icon: 'AlertCircle', label: 'Doubting' },
+  { value: 'Joyful', icon: 'PartyPopper', label: 'Joyful' },
+  { value: 'Stressed', icon: 'ZapOff', label: 'Stressed' },
+  { value: 'Peaceful', icon: 'Waves', label: 'Peaceful' },
+  { value: 'Hopeful', icon: 'Sunrise', label: 'Hopeful' },
+  { value: 'Overwhelmed', icon: 'Zap', label: 'Overwhelmed' },
+  { value: 'Broken', icon: 'HeartCrack', label: 'Broken' },
+  { value: 'Discouraged', icon: 'TrendingDown', label: 'Discouraged' },
+  { value: 'Inspired', icon: 'Lightbulb', label: 'Inspired' },
+  { value: 'Weary', icon: 'Loader', label: 'Weary' },
 ] as const;
