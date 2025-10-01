@@ -22,6 +22,7 @@ interface DevotionalDisplayProps {
   selectedMood: string;
   onGenerateAnother: () => void;
   onPrint: () => void;
+  devotionalId?: string | null;
 }
 
 export default function DevotionalDisplay({
@@ -31,6 +32,7 @@ export default function DevotionalDisplay({
   selectedMood,
   onGenerateAnother,
   onPrint,
+  devotionalId,
 }: DevotionalDisplayProps) {
   const devotionalTitle = sections.title || 'A Moment of Reflection';
 
@@ -101,7 +103,7 @@ export default function DevotionalDisplay({
       </div>
 
       {/* Share Buttons */}
-      <ShareButtons title={devotionalTitle} content={shareContent} />
+      <ShareButtons title={devotionalTitle} content={shareContent} devotionalId={devotionalId} />
 
       {/* Action Buttons */}
       <div className="action-buttons flex flex-wrap justify-center gap-4 mt-6">

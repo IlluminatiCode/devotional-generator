@@ -30,6 +30,7 @@ export default function HomePage(): React.JSX.Element {
     prayer: string;
     challenge: string;
   } | null>(null);
+  const [devotionalId, setDevotionalId] = useState<string | null>(null);
 
   const handleGenerateDevotional = async () => {
     if (!selectedTheme) {
@@ -73,6 +74,30 @@ export default function HomePage(): React.JSX.Element {
         if (text) {
           const sections = parseDevotionalContent(text);
           setDevotionalContent(sections);
+
+          // Save devotional to database
+          try {
+            const saveResponse = await fetch('/api/devotional', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                ...sections,
+                theme: selectedTheme,
+                audience: selectedAudience || null,
+                mood: selectedMood || null,
+              }),
+            });
+
+            if (saveResponse.ok) {
+              const saveData = await saveResponse.json();
+              setDevotionalId(saveData.id);
+            } else {
+              console.error('Failed to save devotional');
+            }
+          } catch (saveError) {
+            console.error('Error saving devotional:', saveError);
+            // Continue even if save fails - don't break the user experience
+          }
         } else {
           throw new Error('No text found in the API response.');
         }
@@ -91,6 +116,7 @@ export default function HomePage(): React.JSX.Element {
 
   const handleGenerateAnother = () => {
     setDevotionalContent(null);
+    setDevotionalId(null);
     setErrorMessage('');
   };
 
@@ -159,6 +185,7 @@ export default function HomePage(): React.JSX.Element {
             selectedMood={selectedMood}
             onGenerateAnother={handleGenerateAnother}
             onPrint={handlePrint}
+            devotionalId={devotionalId}
           />
         )}
       </div>

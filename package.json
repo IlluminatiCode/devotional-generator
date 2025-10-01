@@ -31,6 +31,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@supabase/supabase-js": "^2.58.0",
     "axios": "^1.12.2",
     "clsx": "^2.1.1",
     "compression": "^1.7.4",

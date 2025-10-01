@@ -1,6 +1,10 @@
 .env
+.env.local
 node_modules
+.next
+next-env.d.ts
 crypto-message-generator/
 seo-article-writer/
 local-grid-rank-tracker/
 .claude/
+Devotional Generator/

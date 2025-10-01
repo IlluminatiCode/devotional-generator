@@ -6,12 +6,17 @@ import toast from 'react-hot-toast';
 interface ShareButtonsProps {
   title: string;
   content: string;
+  devotionalId?: string | null;
 }
 
-export default function ShareButtons({ title, content }: ShareButtonsProps) {
+export default function ShareButtons({ title, content, devotionalId }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
 
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const shareUrl = typeof window !== 'undefined'
+    ? devotionalId
+      ? `${window.location.origin}/devotional/${devotionalId}`
+      : window.location.href
+    : '';
   const shareText = `${title}\n\n${content.substring(0, 200)}...`;
 
   const handleCopyLink = async () => {
