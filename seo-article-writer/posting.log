@@ -1,0 +1,269 @@
+2025-08-04 14:43:15,484 - ERROR - URL validation failed for https://example1.com with status code 406
+2025-08-04 14:43:15,552 - ERROR - URL validation failed for https://example2.com with status code 403
+2025-08-04 14:43:24,658 - ERROR - Error fetching content from https://example1.com: 406 Client Error: Not Acceptable for url: https://example1.com/
+2025-08-04 14:43:24,659 - ERROR - No themes found for https://example1.com, skipping.
+2025-08-04 14:43:24,727 - ERROR - Error fetching content from https://example2.com: 403 Client Error: Forbidden for url: https://example2.com/
+2025-08-04 14:43:24,728 - ERROR - No themes found for https://example2.com, skipping.
+2025-08-04 14:43:31,612 - ERROR - Error fetching content from https://example1.com: 406 Client Error: Not Acceptable for url: https://example1.com/
+2025-08-04 14:43:31,613 - WARNING - No themes found for https://example1.com, using default topics.
+2025-08-04 14:43:31,613 - ERROR - Error generating article for topic 'Digital Privacy': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-04 14:43:31,614 - ERROR - Error generating article for topic 'Cybersecurity Basics': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-04 14:43:31,614 - ERROR - Error generating article for topic 'Future of Technology': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-04 14:43:31,681 - ERROR - Error fetching content from https://example2.com: 403 Client Error: Forbidden for url: https://example2.com/
+2025-08-04 14:43:31,682 - WARNING - No themes found for https://example2.com, using default topics.
+2025-08-04 14:43:31,682 - ERROR - Error generating article for topic 'Digital Privacy': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-04 14:43:31,682 - ERROR - Error generating article for topic 'Cybersecurity Basics': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-04 14:43:31,682 - ERROR - Error generating article for topic 'Future of Technology': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-08-04 14:44:02,286 - ERROR - Error fetching content from https://example1.com: 406 Client Error: Not Acceptable for url: https://example1.com/
+2025-08-04 14:44:02,287 - WARNING - No themes found for https://example1.com, using default topics.
+2025-08-04 14:44:03,419 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-08-04 14:44:03,430 - ERROR - Error generating article for topic 'Digital Privacy': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-04 14:44:03,826 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-08-04 14:44:03,827 - ERROR - Error generating article for topic 'Cybersecurity Basics': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-04 14:44:04,263 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-08-04 14:44:04,263 - ERROR - Error generating article for topic 'Future of Technology': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-04 14:44:04,318 - ERROR - Error fetching content from https://example2.com: 403 Client Error: Forbidden for url: https://example2.com/
+2025-08-04 14:44:04,318 - WARNING - No themes found for https://example2.com, using default topics.
+2025-08-04 14:44:04,707 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-08-04 14:44:04,707 - ERROR - Error generating article for topic 'Digital Privacy': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-04 14:44:05,147 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-08-04 14:44:05,147 - ERROR - Error generating article for topic 'Cybersecurity Basics': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-04 14:44:05,537 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-08-04 14:44:05,538 - ERROR - Error generating article for topic 'Future of Technology': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-08-04 14:49:22,673 - INFO - URL validation successful for https://darkweblinks.io/
+2025-08-04 14:49:23,264 - INFO - Successfully fetched content from https://darkweblinks.io/
+2025-08-04 14:49:23,280 - INFO - Extracted 10 potential themes.
+2025-08-04 14:49:30,932 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:49:30,955 - INFO - Successfully generated article for topic: Dark Web Links 2025
+2025-08-04 14:49:30,955 - INFO - Saved article to output\darkweblinks_io_dark_web_links_2025_1.md
+2025-08-04 14:49:40,831 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:49:40,832 - INFO - Successfully generated article for topic: The Dark Web
+2025-08-04 14:49:40,833 - INFO - Saved article to output\darkweblinks_io_the_dark_web_2.md
+2025-08-04 14:49:47,871 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:49:47,872 - INFO - Successfully generated article for topic: GOVERNMENTS AND THE DARK WEB
+2025-08-04 14:49:47,873 - INFO - Saved article to output\darkweblinks_io_governments_and_the_dark_web_3.md
+2025-08-04 14:49:48,294 - INFO - URL validation successful for https://darkweblinks.club/
+2025-08-04 14:49:48,638 - INFO - Successfully fetched content from https://darkweblinks.club/
+2025-08-04 14:49:48,656 - INFO - Extracted 12 potential themes.
+2025-08-04 14:49:56,605 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:49:56,655 - INFO - Successfully generated article for topic: The Onion Router (TOR)
+2025-08-04 14:49:56,657 - INFO - Saved article to output\darkweblinks_club_the_onion_router_(tor)_1.md
+2025-08-04 14:50:01,949 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:50:01,950 - INFO - Successfully generated article for topic: September 2024 working v3 dark web links are updated and our list is easy to search and use.
+2025-08-04 14:50:01,951 - INFO - Saved article to output\darkweblinks_club_september_2024_working_v3_dark_web_links_are_updated_and_our_list_is_easy_to_search_and_use._2.md
+2025-08-04 14:50:06,844 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:50:06,859 - INFO - Successfully generated article for topic: Using Tails and TOR
+2025-08-04 14:50:06,860 - INFO - Saved article to output\darkweblinks_club_using_tails_and_tor_3.md
+2025-08-04 14:50:07,228 - INFO - URL validation successful for https://darkwebmarket.net/
+2025-08-04 14:50:07,438 - INFO - Successfully fetched content from https://darkwebmarket.net/
+2025-08-04 14:50:07,450 - INFO - Extracted 11 potential themes.
+2025-08-04 14:50:14,359 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:50:14,369 - INFO - Successfully generated article for topic: Can Dark Web Markets Benefit Society?
+2025-08-04 14:58:04,246 - INFO - URL validation successful for https://darkweblinks.io/
+2025-08-04 14:58:04,808 - INFO - Successfully fetched content from https://darkweblinks.io/
+2025-08-04 14:58:04,824 - INFO - Extracted 10 potential themes.
+2025-08-04 14:58:10,215 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:58:10,226 - INFO - Successfully generated article for topic: Non-commercial links:
+2025-08-04 14:58:10,227 - INFO - Saved article to output\darkweblinks_io_non-commercial_links_1.md
+2025-08-04 14:58:17,686 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:58:17,687 - INFO - Successfully generated article for topic: GOVERNMENTS AND THE DARK WEB
+2025-08-04 14:58:17,688 - INFO - Saved article to output\darkweblinks_io_governments_and_the_dark_web_2.md
+2025-08-04 14:58:30,473 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:58:30,478 - INFO - Successfully generated article for topic: The Dark Web
+2025-08-04 14:58:30,479 - INFO - Saved article to output\darkweblinks_io_the_dark_web_3.md
+2025-08-04 14:58:30,891 - INFO - URL validation successful for https://darkweblinks.club/
+2025-08-04 14:58:31,256 - INFO - Successfully fetched content from https://darkweblinks.club/
+2025-08-04 14:58:31,275 - INFO - Extracted 12 potential themes.
+2025-08-04 14:58:41,991 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:58:41,992 - INFO - Successfully generated article for topic: How to Navigate the Deep Web Safely
+2025-08-04 14:58:41,993 - INFO - Saved article to output\darkweblinks_club_how_to_navigate_the_deep_web_safely_1.md
+2025-08-04 14:58:50,937 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:58:50,939 - INFO - Successfully generated article for topic: Dark Web Links - Dark Web Links 2025 | Working Onion Links List 2025
+2025-08-04 14:58:50,941 - INFO - Saved article to output\darkweblinks_club_dark_web_links_-_dark_web_links_2025__working_onion_links_list_2025_2.md
+2025-08-04 14:58:58,135 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:58:58,139 - INFO - Successfully generated article for topic: Tails
+2025-08-04 14:58:58,140 - INFO - Saved article to output\darkweblinks_club_tails_3.md
+2025-08-04 14:58:58,329 - INFO - URL validation successful for https://darkwebmarket.net/
+2025-08-04 14:58:58,531 - INFO - Successfully fetched content from https://darkwebmarket.net/
+2025-08-04 14:58:58,544 - INFO - Extracted 11 potential themes.
+2025-08-04 14:59:08,840 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:59:08,841 - INFO - Successfully generated article for topic: Top Services & Markets in 2025
+2025-08-04 14:59:08,842 - INFO - Saved article to output\darkwebmarket_net_top_services_&_markets_in_2025_1.md
+2025-08-04 14:59:19,832 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:59:19,840 - INFO - Successfully generated article for topic: How to access a dark web market website
+2025-08-04 14:59:19,851 - INFO - Saved article to output\darkwebmarket_net_how_to_access_a_dark_web_market_website_2.md
+2025-08-04 14:59:24,260 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:59:24,268 - INFO - Successfully generated article for topic: Links To Dark Web Markets 2025
+2025-08-04 14:59:24,269 - INFO - Saved article to output\darkwebmarket_net_links_to_dark_web_markets_2025_3.md
+2025-08-04 14:59:24,939 - INFO - URL validation successful for https://darkweburls.com/
+2025-08-04 14:59:25,381 - INFO - Successfully fetched content from https://darkweburls.com/
+2025-08-04 14:59:25,399 - INFO - Extracted 13 potential themes.
+2025-08-04 14:59:30,775 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:59:30,780 - INFO - Successfully generated article for topic: Links to dark web sites
+2025-08-04 14:59:30,781 - INFO - Saved article to output\darkweburls_com_links_to_dark_web_sites_1.md
+2025-08-04 14:59:39,484 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:59:39,488 - INFO - Successfully generated article for topic: COMMERCIAL LINKS – DARK WEB URLS 2025
+2025-08-04 14:59:39,489 - INFO - Saved article to output\darkweburls_com_commercial_links_–_dark_web_urls_2025_2.md
+2025-08-04 14:59:45,959 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 14:59:45,962 - INFO - Successfully generated article for topic: Hidden Wiki and other dark web link collections:
+2025-08-04 14:59:45,963 - INFO - Saved article to output\darkweburls_com_hidden_wiki_and_other_dark_web_link_collections_3.md
+2025-08-04 14:59:56,372 - INFO - URL validation successful for https://darkweb.website/
+2025-08-04 14:59:56,783 - INFO - Successfully fetched content from https://darkweb.website/
+2025-08-04 14:59:56,805 - INFO - Extracted 3 potential themes.
+2025-08-04 15:00:09,230 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:00:09,233 - INFO - Successfully generated article for topic: Dark Web Websites \U0001f4bb 2025 Working Onion Links
+2025-08-04 15:00:09,234 - INFO - Saved article to output\darkweb_website_dark_web_websites_\U0001f4bb_2025_working_onion_links_1.md
+2025-08-04 15:00:17,357 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:00:17,359 - INFO - Successfully generated article for topic: Dark web websites are not accessible to the public, but it is possible to visit them with our specialized list of working v3 onion links.
+2025-08-04 15:00:17,360 - INFO - Saved article to output\darkweb_website_dark_web_websites_are_not_accessible_to_the_public,_but_it_is_possible_to_visit_them_with_our_specialized_list_of_working_v3_onion_links._2.md
+2025-08-04 15:00:23,118 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:00:23,119 - INFO - Successfully generated article for topic: Dark Web Websites
+2025-08-04 15:00:23,119 - INFO - Saved article to output\darkweb_website_dark_web_websites_3.md
+2025-08-04 15:00:24,246 - INFO - URL validation successful for https://onionlinks.com/
+2025-08-04 15:00:25,190 - INFO - Successfully fetched content from https://onionlinks.com/
+2025-08-04 15:00:25,208 - INFO - Extracted 10 potential themes.
+2025-08-04 15:00:31,405 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:00:31,411 - INFO - Successfully generated article for topic: Drugs
+2025-08-04 15:00:31,412 - INFO - Saved article to output\onionlinks_com_drugs_1.md
+2025-08-04 15:00:43,879 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:00:43,903 - INFO - Successfully generated article for topic: Find the best onion links list here. Working onion links for 2025 with the best dark web links to explore. All working and updated.
+2025-08-04 15:00:43,916 - INFO - Saved article to output\onionlinks_com_find_the_best_onion_links_list_here._working_onion_links_for_2025_with_the_best_dark_web_links_to_explore._all_working_and_updated._2.md
+2025-08-04 15:00:55,305 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:00:55,306 - INFO - Successfully generated article for topic: Onion Links | Dark Web Links
+2025-08-04 15:00:55,307 - INFO - Saved article to output\onionlinks_com_onion_links__dark_web_links_3.md
+2025-08-04 15:00:58,946 - INFO - URL validation successful for https://hire-a-hacker.org/
+2025-08-04 15:00:59,334 - INFO - Successfully fetched content from https://hire-a-hacker.org/
+2025-08-04 15:00:59,346 - INFO - Extracted 8 potential themes.
+2025-08-04 15:01:07,419 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:01:07,427 - INFO - Successfully generated article for topic: Want to hire a hacker online in 2025? Learn how to find and hire a professional hacker for your personal or business needs on the dark web.
+2025-08-04 15:01:07,429 - INFO - Saved article to output\hire-a-hacker_org_want_to_hire_a_hacker_online_in_2025_learn_how_to_find_and_hire_a_professional_hacker_for_your_personal_or_business_needs_on_the_dark_web._1.md
+2025-08-04 15:01:19,943 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:01:19,952 - INFO - Successfully generated article for topic: How to Hire a Hacker on the Dark Web in 2025: A Comprehensive Guide
+2025-08-04 15:01:19,953 - INFO - Saved article to output\hire-a-hacker_org_how_to_hire_a_hacker_on_the_dark_web_in_2025_a_comprehensive_guide_2.md
+2025-08-04 15:01:26,428 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:01:26,429 - INFO - Successfully generated article for topic: Ethical and Legal Considerations
+2025-08-04 15:01:26,430 - INFO - Saved article to output\hire-a-hacker_org_ethical_and_legal_considerations_3.md
+2025-08-04 15:04:55,106 - INFO - URL validation successful for https://darkweblinks.io/
+2025-08-04 15:04:55,659 - INFO - Successfully fetched content from https://darkweblinks.io/
+2025-08-04 15:04:55,675 - INFO - Extracted 10 potential themes.
+2025-08-04 15:05:00,246 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:05:00,262 - INFO - Successfully generated article for topic: What Can I Do With Deep Web Links?
+2025-08-04 15:05:00,263 - INFO - Saved article to output\darkweblinks_io_what_can_i_do_with_deep_web_links_1.md
+2025-08-04 15:05:03,228 - INFO - Successfully posted 'What Can I Do With Deep Web Links?' to https://darkweblinks.io/
+2025-08-04 15:05:26,109 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:05:26,121 - INFO - Successfully generated article for topic: Darkweblinks.io has working v3 .onion links in 2025. Our dark web links are always updated and easy to access with the Tor browser.
+2025-08-04 15:05:26,122 - INFO - Saved article to output\darkweblinks_io_darkweblinks.io_has_working_v3_.onion_links_in_2025._our_dark_web_links_are_always_updated_and_easy_to_access_with_the_tor_browser._2.md
+2025-08-04 15:05:27,773 - INFO - Successfully posted 'Darkweblinks.io has working v3 .onion links in 2025. Our dark web links are always updated and easy to access with the Tor browser.' to https://darkweblinks.io/
+2025-08-04 15:05:31,769 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:05:31,778 - INFO - Successfully generated article for topic: GOVERNMENTS AND THE DARK WEB
+2025-08-04 15:05:31,779 - INFO - Saved article to output\darkweblinks_io_governments_and_the_dark_web_3.md
+2025-08-04 15:05:33,422 - INFO - Successfully posted 'GOVERNMENTS AND THE DARK WEB' to https://darkweblinks.io/
+2025-08-04 15:05:33,872 - INFO - URL validation successful for https://darkweblinks.club/
+2025-08-04 15:05:34,236 - INFO - Successfully fetched content from https://darkweblinks.club/
+2025-08-04 15:05:34,254 - INFO - Extracted 12 potential themes.
+2025-08-04 15:05:45,689 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:05:45,690 - INFO - Successfully generated article for topic: Other Dark Web Links
+2025-08-04 15:05:45,691 - INFO - Saved article to output\darkweblinks_club_other_dark_web_links_1.md
+2025-08-04 15:05:48,964 - INFO - Successfully posted 'Other Dark Web Links' to https://darkweblinks.club/
+2025-08-04 15:05:53,634 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:05:53,648 - INFO - Successfully generated article for topic: September 2024 working v3 dark web links are updated and our list is easy to search and use.
+2025-08-04 15:05:53,650 - INFO - Saved article to output\darkweblinks_club_september_2024_working_v3_dark_web_links_are_updated_and_our_list_is_easy_to_search_and_use._2.md
+2025-08-04 15:05:56,844 - INFO - Successfully posted 'September 2024 working v3 dark web links are updated and our list is easy to search and use.' to https://darkweblinks.club/
+2025-08-04 15:06:02,669 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:06:02,671 - INFO - Successfully generated article for topic: Hidden Wikis
+2025-08-04 15:06:02,672 - INFO - Saved article to output\darkweblinks_club_hidden_wikis_3.md
+2025-08-04 15:06:05,830 - INFO - Successfully posted 'Hidden Wikis' to https://darkweblinks.club/
+2025-08-04 15:06:06,020 - INFO - URL validation successful for https://darkwebmarket.net/
+2025-08-04 15:06:06,233 - INFO - Successfully fetched content from https://darkwebmarket.net/
+2025-08-04 15:06:06,245 - INFO - Extracted 11 potential themes.
+2025-08-04 15:06:12,437 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:06:12,445 - INFO - Successfully generated article for topic: Commercial Onion Links
+2025-08-04 15:06:12,446 - INFO - Saved article to output\darkwebmarket_net_commercial_onion_links_1.md
+2025-08-04 15:06:15,060 - INFO - Successfully posted 'Commercial Onion Links' to https://darkwebmarket.net/
+2025-08-04 15:06:23,035 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:06:23,038 - INFO - Successfully generated article for topic: How to access a dark web market website
+2025-08-04 15:06:23,039 - INFO - Saved article to output\darkwebmarket_net_how_to_access_a_dark_web_market_website_2.md
+2025-08-04 15:06:25,735 - INFO - Successfully posted 'How to access a dark web market website' to https://darkwebmarket.net/
+2025-08-04 15:06:33,419 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:06:33,423 - INFO - Successfully generated article for topic: Can Dark Web Markets Benefit Society?
+2025-08-04 15:06:33,424 - INFO - Saved article to output\darkwebmarket_net_can_dark_web_markets_benefit_society_3.md
+2025-08-04 15:06:35,870 - INFO - Successfully posted 'Can Dark Web Markets Benefit Society?' to https://darkwebmarket.net/
+2025-08-04 15:06:36,347 - INFO - URL validation successful for https://darkweburls.com/
+2025-08-04 15:06:36,822 - INFO - Successfully fetched content from https://darkweburls.com/
+2025-08-04 15:06:36,836 - INFO - Extracted 13 potential themes.
+2025-08-04 15:06:42,928 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:06:42,940 - INFO - Successfully generated article for topic: Dark Web URLS 2025
+2025-08-04 15:06:42,941 - INFO - Saved article to output\darkweburls_com_dark_web_urls_2025_1.md
+2025-08-04 15:06:44,859 - INFO - Successfully posted 'Dark Web URLS 2025' to https://darkweburls.com/
+2025-08-04 15:06:52,060 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:06:52,061 - INFO - Successfully generated article for topic: COMMERCIAL LINKS – DARK WEB URLS 2025
+2025-08-04 15:06:52,061 - INFO - Saved article to output\darkweburls_com_commercial_links_–_dark_web_urls_2025_2.md
+2025-08-04 15:06:53,913 - INFO - Successfully posted 'COMMERCIAL LINKS – DARK WEB URLS 2025' to https://darkweburls.com/
+2025-08-04 15:07:05,849 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:07:05,862 - INFO - Successfully generated article for topic: How to Access the Dark Web
+2025-08-04 15:07:05,862 - INFO - Saved article to output\darkweburls_com_how_to_access_the_dark_web_3.md
+2025-08-04 15:07:07,852 - INFO - Successfully posted 'How to Access the Dark Web' to https://darkweburls.com/
+2025-08-04 15:07:09,310 - INFO - URL validation successful for https://darkweb.website/
+2025-08-04 15:07:09,703 - INFO - Successfully fetched content from https://darkweb.website/
+2025-08-04 15:07:09,724 - INFO - Extracted 3 potential themes.
+2025-08-04 15:26:01,722 - ERROR - Credentials file not found at credentials_last_3.txt
+2025-08-04 15:29:13,606 - INFO - URL validation successful for https://darkweb.website/
+2025-08-04 15:29:13,998 - INFO - Successfully fetched content from https://darkweb.website/
+2025-08-04 15:29:14,016 - INFO - Extracted 3 potential themes.
+2025-08-04 15:29:19,168 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-04 15:29:19,174 - INFO - Successfully generated article for topic: Dark Web Websites
+2025-08-04 15:29:19,174 - INFO - Saved article to output\darkweb_website_dark_web_websites_1.md

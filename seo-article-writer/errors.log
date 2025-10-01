@@ -1,0 +1,77 @@
+URL validation failed for https://example1.com with status code 406
+URL validation failed for https://example2.com with status code 403
+Error fetching content from https://example1.com: 406 Client Error: Not Acceptable for url: https://example1.com/
+No themes found for https://example1.com, skipping.
+Error fetching content from https://example2.com: 403 Client Error: Forbidden for url: https://example2.com/
+No themes found for https://example2.com, skipping.
+Error fetching content from https://example1.com: 406 Client Error: Not Acceptable for url: https://example1.com/
+Error generating article for topic 'Digital Privacy': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Error generating article for topic 'Cybersecurity Basics': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Error generating article for topic 'Future of Technology': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Error fetching content from https://example2.com: 403 Client Error: Forbidden for url: https://example2.com/
+Error generating article for topic 'Digital Privacy': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Error generating article for topic 'Cybersecurity Basics': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Error generating article for topic 'Future of Technology': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+Error fetching content from https://example1.com: 406 Client Error: Not Acceptable for url: https://example1.com/
+Error generating article for topic 'Digital Privacy': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Error generating article for topic 'Cybersecurity Basics': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Error generating article for topic 'Future of Technology': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Error fetching content from https://example2.com: 403 Client Error: Forbidden for url: https://example2.com/
+Error generating article for topic 'Digital Privacy': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Error generating article for topic 'Cybersecurity Basics': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Error generating article for topic 'Future of Technology': Error code: 401 - {'error': {'message': 'Incorrect API key provided: DUMMY_KEY. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Credentials file not found at credentials_last_3.txt
