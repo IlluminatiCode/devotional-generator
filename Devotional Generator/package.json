@@ -31,6 +31,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
     "axios": "^1.12.2",
     "clsx": "^2.1.1",
     "compression": "^1.7.4",
