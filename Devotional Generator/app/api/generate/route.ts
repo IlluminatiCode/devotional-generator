@@ -4,7 +4,7 @@ import axios from "axios";
 import { devotionalRequestSchema } from "@/lib/validation";
 import { getRandomVerses } from "@/lib/bible-verses";
 import type { GeminiAPIResponse } from "@/lib/types";
-import type { ZodError } from "zod";
+import { ZodError } from "zod";
 
 /**
  * POST /api/generate
