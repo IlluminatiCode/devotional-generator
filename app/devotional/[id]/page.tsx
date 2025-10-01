@@ -7,6 +7,7 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
+import Link from 'next/link';
 import DevotionalDisplay from '@/components/DevotionalDisplay';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import DarkModeToggle from '@/components/DarkModeToggle';
@@ -14,7 +15,7 @@ import type { Devotional } from '@/lib/supabase';
 
 export default function DevotionalPage() {
   const params = useParams();
-  const id = params?.id as string;
+  const id = params?.['id'] as string;
 
   const [devotional, setDevotional] = useState<Devotional | null>(null);
   const [loading, setLoading] = useState(true);
@@ -67,12 +68,12 @@ export default function DevotionalPage() {
             {error || 'The devotional you are looking for could not be found.'}
           </p>
           <div className="text-center">
-            <a
+            <Link
               href="/"
               className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors"
             >
               Generate a New Devotional
-            </a>
+            </Link>
           </div>
         </div>
       </main>
