@@ -23,7 +23,7 @@ export default function SelectionCard({
   onClick,
 }: SelectionCardProps) {
   // Dynamically get the icon component from lucide-react
-  const IconComponent = (LucideIcons as Record<string, React.ComponentType<{ className?: string }>>)[icon];
+  const IconComponent = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[icon];
 
   return (
     <div
